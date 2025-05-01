@@ -3,6 +3,8 @@ import spaceBackground from './assets/background.png';
 import { useEffect, useState } from 'react';
 import ParticleBackground from './components/particleBackground';
 import GlowCard from './components/glowCard';
+import Facts from './components/facts';
+import PlanetModel from "./components/planetModel";
 
 function App() {
   const [animate, setAnimate] = useState(false);
@@ -43,8 +45,11 @@ function App() {
         </div>
       </div>
 
-      <div className="m-20">
+      <div className="h-[50vh] m-20">
       < GlowCard />
+      < Facts classname="m-20"/>
+      <h1>Space-Themed Website</h1>
+      <PlanetModel textureUrl="./assets/mars-texture.jpg" />
       </div>
 
     </div>
